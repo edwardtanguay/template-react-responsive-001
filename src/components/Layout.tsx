@@ -1,21 +1,14 @@
 import { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Menu, X, Home, User, Settings, Mail, FileText, Calendar, ShoppingCart, Heart, Bell, Search } from 'lucide-react';
+import { Menu, X, Home, Settings, Mail, FileText, Calendar, ShoppingCart, Heart, Bell, Search, Info } from 'lucide-react';
 
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Home', path: '/', icon: Home },
-    { name: 'Profile', path: '/profile', icon: User },
-    { name: 'Settings', path: '/settings', icon: Settings },
-    { name: 'Messages', path: '/messages', icon: Mail },
+    { name: 'Welcome', path: '/', icon: Home },
     { name: 'Documents', path: '/documents', icon: FileText },
-    { name: 'Calendar', path: '/calendar', icon: Calendar },
-    { name: 'Shopping', path: '/shopping', icon: ShoppingCart },
-    { name: 'Favorites', path: '/favorites', icon: Heart },
-    { name: 'Notifications', path: '/notifications', icon: Bell },
-    { name: 'Search', path: '/search', icon: Search },
+    { name: 'About', path: '/about', icon: Info },
   ];
 
   return (
@@ -23,7 +16,7 @@ export default function Layout() {
       <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-xl sm:text-2xl font-bold text-slate-800 mr-3">MyApp</h1>
+            <h1 className="text-xl sm:text-2xl font-bold text-slate-800 mr-3">Info Site</h1>
 
             <nav className="hidden lg:flex space-x-1">
               {menuItems.map((item) => {
@@ -93,13 +86,6 @@ export default function Layout() {
         </div>
       </main>
 
-      <footer className="bg-white border-t border-slate-200 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <p className="text-center text-slate-600 text-sm">
-            © 2025 MyApp. A fully responsive menu system.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

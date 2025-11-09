@@ -2,6 +2,6 @@
 
 A professional looking Vite React site with 10 pages and hamburger menu in responsive view.
 
-<img width="1424" height="674" alt="grafik" src="https://github.com/user-attachments/assets/451d098f-e562-4381-96fe-bc6e6eb45354" />
+<img width="1268" height="631" alt="grafik" src="https://github.com/user-attachments/assets/ff01d9bf-c4a1-4fc8-ad04-4df7868fd4f5" />
 
-<img width="860" height="670" alt="grafik" src="https://github.com/user-attachments/assets/43d8bbda-1a92-49ee-bfeb-b65503157e1d" />
+<img width="861" height="760" alt="grafik" src="https://github.com/user-attachments/assets/8b989e12-998b-4614-8e24-cffba79167a2" />

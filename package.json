@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3218 --open",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json"
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/template-react-responsive-001-$(date +%F-%H-%M-%S).zip\"'",
+    "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\""
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",

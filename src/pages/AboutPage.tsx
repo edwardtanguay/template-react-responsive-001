@@ -1,16 +1,16 @@
-import { User } from 'lucide-react';
+import { Info } from 'lucide-react';
 
-export default function ProfilePage() {
+export default function AboutPage() {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-12">
       <div className="flex items-center gap-4 mb-6">
-        <User size={32} className="text-slate-800" />
-        <h2 className="text-3xl sm:text-4xl font-bold text-slate-800">Profile</h2>
+        <Info size={32} className="text-slate-800" />
+        <h2 className="text-3xl sm:text-4xl font-bold text-slate-800">About</h2>
       </div>
 
       <div className="prose max-w-none">
         <p className="text-slate-600 text-lg leading-relaxed">
-          Manage your profile settings and personal information here.
+        This is the about page.
         </p>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
