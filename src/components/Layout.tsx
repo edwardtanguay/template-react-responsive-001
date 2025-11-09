@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Menu, X, Home, Settings, Mail, FileText, Calendar, ShoppingCart, Heart, Bell, Search, Info } from 'lucide-react';
+import { Menu, X, Home, FileText, Info } from 'lucide-react';
 
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
