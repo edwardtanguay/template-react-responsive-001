@@ -1,21 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import DocumentsPage from './pages/DocumentsPage';
-import WelcomePage from './pages/WelcomePage';
-import AboutPage from './pages/AboutPage';
+import PageWelcome from './pages/PageWelcome';
+import PageDocuments from './pages/PageDocuments';
+import PageAbout from './pages/PageAbout';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<WelcomePage/>} />
-          <Route path="documents" element={<DocumentsPage />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route index element={<PageWelcome />} />
+          <Route path="documents" element={<PageDocuments />} />
+          <Route path="about" element={<PageAbout />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;
