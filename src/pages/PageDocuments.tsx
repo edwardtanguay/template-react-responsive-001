@@ -3,7 +3,7 @@ import ContentWrapper from '../components/ContentWrapper';
 import { InfoBox } from '../components/InfoBox';
 import { InfoBoxWrapper } from '../components/InfoBoxWrapper';
 
-export default function PageDocuments() {
+export const PageDocuments = () => {
   return (
     <ContentWrapper icon={<FileText size={32} className="text-slate-800" />} title="Documents" >
       <p>

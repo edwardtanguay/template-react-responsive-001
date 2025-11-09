@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import PageWelcome from './pages/PageWelcome';
-import PageDocuments from './pages/PageDocuments';
-import PageAbout from './pages/PageAbout';
+import { PageWelcome } from './pages/PageWelcome';
+import { PageDocuments } from './pages/PageDocuments';
+import { PageAbout } from './pages/PageAbout';
 
-export default function App() {
+export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
